@@ -3,21 +3,14 @@
   <mat-toolbar color="primary">
     <span>IOT Home</span>
   </mat-toolbar>
-
-  <mat-card class="sample-card">
-    <div class="container-fill d-flex display-1">
-
-      <div class="m-auto">23°C</div>
-    </div>
-  </mat-card>
-
-  <mat-card class="sample-card">
-    <div class="container-fill d-flex display-1">
-
-      <div class="m-auto">70%</div>
-    </div>
-  </mat-card>
-
+  <div *ngIf="this.iotService.iotData">
+    <app-data-card 
+  *ngFor="let key of Object.keys(this.iotService.iotData)"
+  [value]="this.iotService.iotData.key"
+  [key]="key"
+  >
+  </app-data-card>
+  </div>
   <mat-card class="sample-card">
     <div class="container-fill d-flex display-1">
       <div class="m-auto">
