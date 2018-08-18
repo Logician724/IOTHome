@@ -1,0 +1,34 @@
+.fill-screen {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-width {
+    min-width: 100%;
+}
+
+.center-span {
+    margin-top: auto;
+
+}
+
+.container-fill {
+    height: 100%;
+}
+.sample-card {
+    height: 35vh;
+    width: 100%;
+    padding: 0;
+    background-color: #AD1457;
+    text-align: center;
+    color: #F5F5F5;
+    vertical-align: center;
+
+}
+
+.sample-span {
+    text-align: center;
+}
+
+
